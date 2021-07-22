@@ -1,17 +1,155 @@
-body, html{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+body, html {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0; 
+  overflow-y: scroll  ;
+  display: flex;
+  flex-direction: column;
 }
 
-.page1{
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
+
+
+.homepage{
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 55% 5% 40%;
+  
+  }
+
+  .navigator{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+  }
+svg{
+  
+  z-index: -1;
+}
+
+.brand{
+  display:flex;
+  flex-direction: column;
+}
+
+.space-above{
+  height: 50px;
+  width: 100vw;
+  background:transparent;
+  z-index: 1;
+}
+
+
+
+.right{
+  height: 100%;
+  text-align: right;
+
+}
+
+.gap{
+  text-align: right;
+}
+.nav{
+  font-family: Oswald;
+  display: inline-flex;
+  color:antiquewhite;
+  background: transparent;
+  margin-right: -10vw;
+  
+}
+
+.nav-item{
+  list-style-type: none;
+  padding: 0 40px 0 40px ;
+  cursor:pointer;
+  
+}
+.nav-item:hover{
+  border-bottom:3px solid crimson;
+  
+}
+
+
+.image-div{
+  height: 400px;
+  width: 700px;
+  z-index: 2;
+ }
+ 
+ .car{
+   position: absolute;
+   z-index: 1;
+ }
+
+ .carhub{
+   display: flex;
+   flex-direction: column;
+   height: auto;
+   width: 100%;
+   margin-top: 20vh;
+
+ }
+
+ #heading{
+   height:auto;
+   width: 80%;
+   margin: auto;
+
+ }
+
+ .h11{
+   font-size: 5rem;
+   font-family: Oswald;
+   font-weight: bolder;
+   color: darkgray;
+ }
+ #description{
+  height:auto;
+  width: 80%;
+  margin: auto;
+ }
+
+ .h21{
+  font-size: 2rem;
+  font-family: Oswald;
+  font-weight: bolder;
+  color: darkgray;
+ }
+
+ .car{
+   margin-top: 25vh;
+   margin-left:-100px;
+   transform: rotate(-5deg);
+   animation: run 3s 1;
+   
+ }
+ .image{
+   text-align: center;
+ }
+
+ @keyframes run{
+   0%{
+     transform: translate(100px, -50px);
+
+   }
+ 100%{
+   transform: translate(0, 0);
+   transform: rotate(-5deg);
+
+ }
+ }
+ 
+
+ /*page 2*/
+
+.page2{
+  height: 100vh;
+  width: 100vw;
+  background-color: aquamarine;
 }

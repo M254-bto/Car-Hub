@@ -5,11 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Executive Car Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullview/1.1.2/fullview.min.css" integrity="sha512-J9zonUF9j1FuhcLJttmC+iw0Eq6xxuXyQaHfqlpqxC8UaN7H7ETQ930jExdUeM2LDenoFDOVWU3cAch+bY8P6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
 </head>
 <body>
-    <div class="page1">
+
+    <div class="homepage">
+        <div class="brand">
+            <div class="space-above"></div>
+                <div class="navigator">
+                    <div class="spacer sp1"></div>
+                    <nav class="nav">
+                        <li class="nav-item item1">Home</li>
+                        <li class="nav-item item2">service</li>
+                        <li class="nav-item item1">About</li>
+                    </nav>
+                </div>
+
+                <div class="carhub">
+                    <div id="heading">
+                        <h1 class="h11">Executive Car Hub</h1>
+                    </div>
+                    <div id="description">
+                        <h2 class="h21">
+                            Its more than just travel
+                        </h2>
+                    </div>
+                </div>
+        </div>
+
+        <div class="image">
+            <img src="./images/car5.png" alt="jeep" class="car">
+        </div>
+        
+
+        <div class="right">
+           
+            
+                <div class="image">
+                    <svg width="538" height="720" viewBox="0 0 538 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M230.786 -48C538 -48 538 -48 538 -48V818C538 818 538 818 230.786 818C-76.4277 818 -76.4278 -48 230.786 -48Z" fill="#dc143c"/>
+                        
+                        </svg>
+                     
+                                          
+                </div>
+                
+                    
+        </div>
+    
 
     </div>
-</body>
+
+    <div class="page2">
+        <h1>This is page 2</h1>
+    </div>
+    
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.2/dist/fullpage.min.js"></script>
+
+    <script>
+    new fullpage("#page1", {
+        autoScrolling: true,
+        navigation: true
+    })
+
+
+</script>
 </html>
